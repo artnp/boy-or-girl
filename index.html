@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+        body{
+            font-family: 'Srisakdi', cursive;
+            font-size:x-large
+        }
+        </style>
+    <title>ดู บุตร์ ใน ครรภ์ จะ เปน ชาย หรือ หญิง</title>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <center>
+    <h1>ดู บุตร์ ใน ครรภ์ จะ เปน ชาย หรือ หญิง</h1>
+
+    เดือนที่ตั้งครรภ์ : <input type="text" id="x" style="width:50px;height:25px"> 
+    อายุของมารดา :  <input type="text" id="y"  style="width:50px;height:25px">
+  => <button class="cal" onsubmit="cal()" style="font-size:18px">ทำนาย</button>
+
+
+
+   
+    <br><br>
+    <div id="cal"></div>
+<p></p>
+<hr>
+<address>ถ้า หยาก จะ รู้ ว่า บุตร์ ใน ครรภ์ นั้น จะ เปน ชาย ฤา หญิง     ท่าน ให้ ตั้ง ๔๙ ลง   แล้ว เอา เดือน ที่ ตั้ง ครรภ์ นั้น บวก เข้า รวม เปน เท่า ไร จง เอา อายุ ของ มารดา 
+    นั้น มา ลบ เสีย เหลือ นั้น ท่าน ให้เอา ๑, ๒, ๓, ๔, ๕, ๖, ๗, ๘, ๙, 
+    ลบ ออก ที ละ ตัว จน เสศ ที่ เหลือ นั้น ไม่ พอ จะ ลบ จง ดู เอา ที่ เลศ นั้น <b>ถ้า เลศ นั้น เปน <u>คิ่ ให้ ทาย ว่า ผู้ ชาย</u> ถ้า เลศ นั้น เปน <u>คู่ ให้ ทาย ว่า ผู้ หญิง</u></b> ถูกแล ฯะ</address>
+    </center>
+    <script>
+        function cal() {
+            z =   (49 + Number(x.value)- Number(y.value))
+    a = z - 1
+    b = a - 2
+    c = b - 3
+    d = c - 4
+    e = d - 5
+    f = e - 6
+    g = f - 7
+    h = g - 8
+    i = h - 9
+
+    if (i > 0){
+        document.getElementById('cal').innerHTML= "<b>ผลทำนาย</b><br>" + "<b><u>" + i + "</b></u>"
+    } else if (h > 0){
+        document.getElementById('cal').innerHTML= "<b>ผลทำนาย</b><br>" + "<b><u>" + h + "</b></u>"
+    }else if (g > 0){
+        document.getElementById('cal').innerHTML= "<b>ผลทำนาย</b><br>" + "<b><u>" + g + "</b></u>"
+    }else if (f > 0){
+        document.getElementById('cal').innerHTML= "<b>ผลทำนาย</b><br>" + "<b><u>" + f + "</b></u>"
+    }else if (e > 0){
+        document.getElementById('cal').innerHTML= "<b>ผลทำนาย</b><br>" + "<b><u>" + e + "</b></u>"
+    }else if (d > 0){
+        document.getElementById('cal').innerHTML= "<b>ผลทำนาย</b><br>" + "<b><u>" + d + "</b></u>"
+    }else if (c > 0){
+        document.getElementById('cal').innerHTML= "<b>ผลทำนาย</b><br>" + "<b><u>" + c + "</b></u>"
+    }else if (b > 0){
+        document.getElementById('cal').innerHTML= "<b>ผลทำนาย</b><br>" + "<b><u>" + b + "</b></u>"
+    }else if (a > 0){
+        document.getElementById('cal').innerHTML= "<b>ผลทำนาย</b><br>" + "<b><u>" + a + "</b></u>"
+
+    }
+    
+}
+document.querySelector('.cal').addEventListener("click", ()=>cal());
+    </script>
+</body>
+</html>
